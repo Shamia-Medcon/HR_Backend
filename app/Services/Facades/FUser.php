@@ -44,4 +44,15 @@ class FUser extends FBase implements IUser
         }
         return null;
     }
+
+    public function sendresetlink(Request $request)
+    {
+        $user = $this->getByColumns([
+            'email' => $request->input('email')
+        ])->first();
+        if ($user) {
+                return $user;
+        }
+        return null;
+    }
 }

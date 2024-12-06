@@ -180,7 +180,7 @@
                                                     style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:19.2px;">
                                                     <p style="margin: 0; margin-bottom: 16px;">Dear {{$first_name}},<br><br>This
                                                         is an automated email from our Leave Management System regarding
-                                                        your recent request to update you password.&nbsp;</p>
+                                                        your recent request to update your password.&nbsp;</p>
                                                     <p style="margin: 0;">&nbsp;</p>
                                                 </div>
                                             </td>

@@ -350,6 +350,10 @@ class FBase implements IBase
         return $this->__instance()->query()->where(['id' => $id])->first();
     }
 
+    public function getByEmail($email)
+    {
+        return $this->__instance()->query()->where('email', $email)->first();
+    }
     public
     function getBySlug($slug)
     {

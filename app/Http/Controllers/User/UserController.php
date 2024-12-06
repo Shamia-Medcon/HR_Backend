@@ -56,20 +56,21 @@ class UserController extends Controller
         }
     }
 
-    public function resetPassword(Request $request, $id)
-    {
-        try {
-            $user = $this->user->getById($id);
-            if ($user) {
-                _EmailHelper::setPassword($user, []);
-                return BaseResource::ok();
-            }
-            return BaseResource::return();
-        } catch (Exception $exception) {
-            Log::error($exception);
-            return BaseResource::return();
+    public function resetPassword(Request $request)
+{
+    try {
+        $email = $request->input('email');
+        $user = $this->user->getByEmail($email);
+        if ($user) {
+            _EmailHelper::setPassword($user, []);
+            return BaseResource::ok();
         }
+        return BaseResource::return();
+    } catch (Exception $exception) {
+        Log::error($exception);
+        return BaseResource::return();
     }
+}
 
     public function preparePassword(Request $request, $token)
     {

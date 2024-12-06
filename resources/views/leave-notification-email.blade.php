@@ -180,7 +180,7 @@
                                                 <div
                                                     style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:19.2px;">
                                                     <p style="margin: 0;">Dear {{$manager}},&nbsp;<br><br>You have a new
-                                                        leave request from [Employee Name] in the Leave Management
+                                                        leave request from {{$name}} in the Leave Management
                                                         System.&nbsp;<br><br>Employee Details:</p>
                                                 </div>
                                             </td>

@@ -30,6 +30,7 @@ Route::group(['prefix' => 'v1'], function () {
         Route::get('/leave-request/approved', [LeaveRequestController::class, 'getApproved'])->name('approved-request');
         Route::get('/managers', [UserController::class, 'getManagers']);
         Route::post('reset-password/{id}', [UserController::class, 'resetPassword']);
+        Route::post('reset-password', [UserController::class, 'resetPassword']);
         Route::post('days-transfer/status/{id}', [DayTransferController::class, 'changeStatus']);
         Route::get('leave-request/approved/perWeek', [LeaveRequestController::class, 'perWeek']);
         Route::get('/leave-request/per-user/{id}', [LeaveRequestController::class, 'perUser'])->name('perUser');

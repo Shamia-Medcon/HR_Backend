@@ -24,6 +24,7 @@ interface IBase
 
     public function getById($id);
 
+    public function getByEmail($email);
 
     public function getLatestRecord();
 
